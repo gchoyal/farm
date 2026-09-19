@@ -1,0 +1,80 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="500" height="400" fill="none">
+  <!-- Traditional Indian Woman Churning Ghee (Bilona Method) - Elegant Sketch Line Art -->
+  <g stroke="#9CA3AF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <!-- Ground / Floor line -->
+    <path d="M40 370 Q250 375 460 370"/>
+    <path d="M70 380 Q250 382 430 380" stroke-width="1"/>
+
+    <!-- Large Traditional Earthen Matka (Curd Pot) -->
+    <!-- Base stand ring -->
+    <ellipse cx="250" cy="355" rx="55" ry="14"/>
+    <!-- Pot body -->
+    <path d="M200 240 C170 280 180 340 250 350 C320 340 330 280 300 240 Z"/>
+    <!-- Pot neck & rim -->
+    <ellipse cx="250" cy="235" rx="42" ry="10"/>
+    <ellipse cx="250" cy="225" rx="46" ry="11"/>
+    <!-- Decorative bands on pot -->
+    <path d="M204 275 Q250 295 296 275" stroke-dasharray="3 3"/>
+    <path d="M192 305 Q250 328 308 305"/>
+
+    <!-- Wooden Mathani (Churning Staff) -->
+    <line x1="250" y1="90" x2="250" y2="245" stroke-width="3"/>
+    <rect x="246" y="80" width="8" height="15" rx="3" stroke-width="1.8"/>
+    <!-- Churner cross arms at top of frame (wood frame support) -->
+    <line x1="160" y1="170" x2="340" y2="170" stroke-width="2.5"/>
+    <line x1="160" y1="170" x2="150" y2="370" stroke-width="2.5"/>
+    <line x1="340" y1="170" x2="350" y2="370" stroke-width="2.5"/>
+    <ellipse cx="250" cy="170" rx="8" ry="4" stroke-width="2"/>
+
+    <!-- Twisted Churning Ropes around Mathani -->
+    <ellipse cx="250" cy="140" rx="10" ry="3.5" stroke-width="2"/>
+    <ellipse cx="250" cy="148" rx="10" ry="3.5" stroke-width="2"/>
+    <ellipse cx="250" cy="156" rx="10" ry="3.5" stroke-width="2"/>
+
+    <!-- Rope ends held by hands -->
+    <path d="M240 144 C210 135 170 170 142 195"/>
+    <path d="M260 152 C290 145 330 175 355 195"/>
+
+    <!-- Indian Woman (Traditional Seated Posture on Left) -->
+    <!-- Head with Ghoonghat / Saree pallu -->
+    <path d="M120 120 C105 120 95 135 95 155 C95 180 115 190 130 190 C140 190 148 180 148 165 C148 140 135 120 120 120 Z"/>
+    <!-- Face profile line & bindi -->
+    <path d="M125 145 Q130 152 127 158 Q122 165 118 168"/>
+    <circle cx="123" cy="148" r="1.5" fill="#9CA3AF"/>
+    <!-- Earring & bangles -->
+    <circle cx="112" cy="158" r="3"/>
+    <ellipse cx="140" cy="198" rx="3" ry="5"/>
+    <ellipse cx="144" cy="200" rx="3" ry="5"/>
+
+    <!-- Arms pulling rope -->
+    <!-- Left arm stretched -->
+    <path d="M115 175 C125 185 135 190 145 198"/>
+    <!-- Right arm bent back -->
+    <path d="M105 175 C100 190 112 205 128 205"/>
+
+    <!-- Saree Torso & Pleats -->
+    <path d="M98 178 C80 205 78 245 82 285 C85 320 92 355 105 365"/>
+    <!-- Seated Folded Legs (cross-legged posture) -->
+    <path d="M105 365 C125 368 165 365 185 345 C195 335 190 315 175 305 C155 295 120 295 100 300"/>
+    <path d="M85 320 Q120 345 160 348"/>
+    <path d="M90 280 Q130 300 170 290"/>
+
+    <!-- Saree borders & textile folds -->
+    <path d="M105 130 C90 155 82 200 85 245" stroke-dasharray="4 2"/>
+    <path d="M122 125 C140 160 145 220 148 260" stroke-dasharray="4 2"/>
+
+    <!-- Small Brass Handi / Bowl with Golden Ghee on Right side -->
+    <ellipse cx="380" cy="358" rx="26" ry="7"/>
+    <path d="M358 335 C355 350 365 362 380 362 C395 362 405 350 402 335 Z"/>
+    <ellipse cx="380" cy="334" rx="22" ry="5"/>
+    <!-- Ghee Spoon / Ladle -->
+    <line x1="388" y1="310" x2="380" y2="336" stroke-width="2"/>
+    <ellipse cx="380" cy="336" rx="5" ry="3"/>
+
+    <!-- Butter / Makkhan Lumps in Pot -->
+    <ellipse cx="250" cy="226" rx="14" ry="4" stroke-width="1.2"/>
+    <circle cx="242" cy="220" r="3"/>
+    <circle cx="258" cy="219" r="3.5"/>
+    <circle cx="250" cy="216" r="2.5"/>
+  </g>
+</svg>

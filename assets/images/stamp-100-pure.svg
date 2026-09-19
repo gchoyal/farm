@@ -1,0 +1,96 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <!-- Rich Golden Gradient -->
+    <linearGradient id="sealGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="35%" stop-color="#F59E0B"/>
+      <stop offset="75%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+
+    <!-- Ribbon Gold Gradient -->
+    <linearGradient id="textGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="50%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="sealShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+
+  <!-- 16-Pointed Scallop Starburst Seal -->
+  <path d="
+    M 60,3
+    L 68.6,9.2 L 79.3,6.3 L 85.3,15.1 L 96.3,15.7 L 98.9,26.4 L 109.2,30.5 L 107.9,41.2
+    L 116.3,48.2 L 111.1,57.7 L 116.3,67.2 L 107.9,74.2 L 109.2,84.9 L 98.9,89.0 L 96.3,99.7
+    L 85.3,100.3 L 79.3,109.1 L 68.6,106.2 L 60,112.4 L 51.4,106.2 L 40.7,109.1 L 34.7,100.3
+    L 23.7,99.7 L 21.1,89.0 L 10.8,84.9 L 12.1,74.2 L 3.7,67.2 L 8.9,57.7 L 3.7,48.2
+    L 12.1,41.2 L 10.8,30.5 L 21.1,26.4 L 23.7,15.7 L 34.7,15.1 L 40.7,6.3 L 51.4,9.2 Z"
+    fill="url(#sealGold)" 
+    stroke="#78350F" 
+    stroke-width="1.5"
+    stroke-linejoin="round"
+    filter="url(#sealShadow)"
+  />
+
+  <!-- Outer Ring Inset -->
+  <circle cx="60" cy="57.7" r="48" fill="none" stroke="#78350F" stroke-width="1.2" stroke-dasharray="3,2.5" opacity="0.85"/>
+  <circle cx="60" cy="57.7" r="45" fill="none" stroke="#92400E" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- Top Curved Arc Text -->
+  <path id="topTextArc" d="M 28,52 A 38,38 0 0,1 92,52" fill="none"/>
+  <text font-family="'Noto Sans Devanagari', system-ui, sans-serif" font-size="7.5" font-weight="700" fill="#451A03" letter-spacing="1">
+    <textPath href="#topTextArc" startOffset="50%" text-anchor="middle">
+      ★ असली घर का ★
+    </textPath>
+  </text>
+
+  <!-- Big 100% Numbers -->
+  <text 
+    x="60" 
+    y="48" 
+    font-family="system-ui, -apple-system, 'Segoe UI', Arial, sans-serif" 
+    font-size="25" 
+    font-weight="900" 
+    letter-spacing="-0.5"
+    fill="#2B1405" 
+    text-anchor="middle"
+  >100%</text>
+
+  <!-- Center Dark Ribbon -->
+  <g>
+    <!-- Ribbon background -->
+    <path d="M 8,55 L 112,55 L 105,68 L 112,81 L 8,81 L 15,68 Z" fill="#261204" stroke="#78350F" stroke-width="0.8"/>
+    
+    <!-- Left Ribbon Star Cluster -->
+    <polygon points="22,64 23.5,66.5 26,67 24,69 24.5,71.5 22,70 19.5,71.5 20,69 18,67 20.5,66.5" fill="#FBBF24"/>
+    <circle cx="16" cy="68" r="1" fill="#FBBF24"/>
+    
+    <!-- Center Ribbon Text: शुद्ध -->
+    <text 
+      x="60" 
+      y="74" 
+      font-family="'Noto Sans Devanagari', system-ui, sans-serif" 
+      font-size="18.5" 
+      font-weight="900" 
+      letter-spacing="1"
+      fill="url(#textGold)" 
+      text-anchor="middle"
+    >शुद्ध</text>
+
+    <!-- Right Ribbon Star Cluster -->
+    <polygon points="98,64 99.5,66.5 102,67 100,69 100.5,71.5 98,70 95.5,71.5 96,69 94,67 96.5,66.5" fill="#FBBF24"/>
+    <circle cx="104" cy="68" r="1" fill="#FBBF24"/>
+  </g>
+
+  <!-- Bottom Stars (3 Stars) -->
+  <!-- Middle Star (Bigger) -->
+  <polygon points="60,86 62,90.5 66.5,91 63,94.2 64,98.5 60,96 56,98.5 57,94.2 53.5,91 58,90.5" fill="#3B1C06"/>
+  <!-- Left Star -->
+  <polygon points="46,90 47.5,93.2 51,93.7 48.5,96 49.2,99.2 46,97.5 42.8,99.2 43.5,96 41,93.7 44.5,93.2" fill="#3B1C06"/>
+  <!-- Right Star -->
+  <polygon points="74,90 75.5,93.2 79,93.7 76.5,96 77.2,99.2 74,97.5 70.8,99.2 71.5,96 69,93.7 72.5,93.2" fill="#3B1C06"/>
+</svg>
