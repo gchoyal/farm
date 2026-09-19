@@ -610,8 +610,8 @@ function renderProducts() {
           loading="${index === 0 ? 'eager' : 'lazy'}"
           decoding="async"
           ${index === 0 ? 'fetchpriority="high"' : ''}
-          width="600"
-          height="600"
+          width="360"
+          height="360"
         >
         ${prod.isPreOrder ? `
           <div class="product-preorder-bar">⏳ आउट ऑफ स्टॉक • प्री-ऑर्डर चालू</div>
