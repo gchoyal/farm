@@ -1121,7 +1121,7 @@ img {
   position: relative;
   overflow: hidden;
   background-color: transparent;
-  padding: 2.25rem 0 3rem;
+  padding: 1.5rem 0 2rem;
   border-top: none;
   border-bottom: none;
 }
@@ -1236,7 +1236,7 @@ img {
 .contact-info-section {
   position: relative;
   overflow: hidden;
-  padding: 1.25rem 0 4.5rem;
+  padding: 1.5rem 0 2rem;
   background-color: var(--color-bg-main);
   border-top: none;
 }
@@ -1427,6 +1427,7 @@ img {
   border-radius: var(--radius-lg);
   padding: 2.25rem 2rem;
   box-shadow: var(--shadow-md);
+  scroll-margin-top: 1.5rem;
 }
 
 .form-header-box {
@@ -1701,7 +1702,7 @@ img {
 .site-footer {
   background: transparent;
   border-top: none;
-  padding: 2.5rem 0 3.5rem;
+  padding: 1.5rem 0 3rem;
   position: relative;
   z-index: 10;
 }
@@ -1755,8 +1756,6 @@ img {
 
 .sticky-contact-btn:hover {
   background: linear-gradient(135deg, #153728 0%, #245741 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(27, 67, 50, 0.45);
   color: #FFFFFF;
 }
 
@@ -2154,8 +2153,8 @@ img {
   }
 
   .brand-title {
-    font-size: clamp(1.1rem, 4.2vw, 1.35rem);
-    line-height: 1.2;
+    font-size: clamp(1.4rem, 5.5vw, 1.8rem);
+    line-height: 1.22;
   }
 
   .brand-subtitle {
@@ -2167,7 +2166,7 @@ img {
   .brand-trust-pill {
     font-size: 0.84rem;
     padding: 0.35rem 1rem;
-    max-width: 95%;
+    max-width: 305px;
     white-space: normal;
     text-align: center;
   }
@@ -2197,10 +2196,14 @@ img {
     font-size: 1.3rem;
   }
 
+  .products-section {
+    padding: 0.75rem 0;
+  }
+
   .products-grid {
     grid-template-columns: minmax(0, 1fr);
     width: 100%;
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 
   .product-card {
@@ -2261,22 +2264,38 @@ img {
     justify-content: center;
   }
 
+  .contact-info-section {
+    padding: 0.75rem 0;
+  }
+
+  .contact-info-section .section-title-wrap {
+    margin-bottom: 1.15rem;
+  }
+
+  .contact-grid-wrap {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .contact-form-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .trust-section {
+    padding: 0.75rem 0;
+  }
+
   .trust-columns-grid {
     grid-template-columns: 1fr;
-    gap: 1.15rem;
+    gap: 1.25rem;
   }
 
   .trust-col-card {
     min-height: 290px;
   }
 
-  .contact-grid-wrap {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .contact-form-card {
-    padding: 1.5rem 1.25rem;
+  .site-footer {
+    padding: 0.75rem 0 2.25rem;
   }
 
   .footer-brand-row {
@@ -2297,7 +2316,7 @@ img {
 /* Small Screens (max-width: 380px) */
 @media (max-width: 380px) {
   .brand-title {
-    font-size: 1.65rem;
+    font-size: 1.35rem;
   }
 
   .top-bar-rate .top-bar-text {

@@ -6,34 +6,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
   <!-- Primary Meta Tags -->
-  <title>गिरधारी फार्म्स – घर पर निर्मित शुद्ध देसी गिर गाय का घी और प्राकृतिक उत्पाद</title>
-  <meta name="title" content="गिरधारी फार्म्स – घर पर निर्मित शुद्ध देसी गिर गाय का घी और प्राकृतिक उत्पाद">
-  <meta name="description" content="गिरधारी फार्म्स से घर पर निर्मित शुद्ध देसी गिर गाय का घी, भैंस का घी और कच्ची घानी मूंगफली का तेल। मनावर, बड़वानी और कुक्षी में होम डिलीवरी।">
-  <meta name="keywords" content="गिर गाय का घी, शुद्ध देसी घी, भैंस का घी, कच्ची घानी मूंगफली का तेल, गिरधारी फार्म्स, Girdhari Farms, घर पर निर्मित, धार, मनावर, बड़वानी, कुक्षी">
-  <meta name="author" content="गिरधारी फार्म्स">
+  <title>शुद्ध देसी घी और कच्ची घानी तेल</title>
+  <meta name="title" content="शुद्ध देसी घी और कच्ची घानी तेल">
+  <meta name="description" content="घर पर निर्मित शुद्ध देसी घी और कच्ची घानी मूंगफली का तेल। निमाड़ के घरों पर निर्मित शुद्धता, सीधे आपके घर तक।">
+  <meta name="keywords" content="शुद्ध देसी घी, कच्ची घानी तेल, भैंस का घी, कच्ची घानी मूंगफली का तेल, घर पर निर्मित, मनावर, बड़वानी, कुक्षी">
+  <meta name="author" content="शुद्ध देसी घी और कच्ची घानी तेल">
   <meta name="theme-color" content="#1e4d2b">
 
   <!-- Open Graph / Facebook / Instagram -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://girdharifarms.com/">
-  <meta property="og:title" content="गिरधारी फार्म्स – घर पर निर्मित शुद्ध देसी गिर गाय का घी और प्राकृतिक उत्पाद">
-  <meta property="og:description" content="गिरधारी फार्म्स से घर पर निर्मित शुद्ध देसी गिर गाय का घी, भैंस का घी और कच्ची घानी मूंगफली का तेल। मनावर, बड़वानी और कुक्षी में होम डिलीवरी।">
+  <meta property="og:title" content="शुद्ध देसी घी और कच्ची घानी तेल">
+  <meta property="og:description" content="घर पर निर्मित शुद्ध देसी घी और कच्ची घानी मूंगफली का तेल। निमाड़ के घरों पर निर्मित शुद्धता, सीधे आपके घर तक।">
   <meta property="og:image" content="assets/images/og-share.jpg">
   <meta property="og:locale" content="hi_IN">
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="गिरधारी फार्म्स – घर पर निर्मित शुद्ध देसी गिर गाय का घी और प्राकृतिक उत्पाद">
-  <meta name="twitter:description" content="गिरधारी फार्म्स से घर पर निर्मित शुद्ध देसी गिर गाय का घी, भैंस का घी और कच्ची घानी मूंगफली का तेल। मनावर, बड़वानी और कुक्षी में होम डिलीवरी।">
+  <meta name="twitter:title" content="शुद्ध देसी घी और कच्ची घानी तेल">
+  <meta name="twitter:description" content="घर पर निर्मित शुद्ध देसी घी और कच्ची घानी मूंगफली का तेल। निमाड़ के घरों पर निर्मित शुद्धता, सीधे आपके घर तक।">
   <meta name="twitter:image" content="assets/images/og-share.jpg">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
 
   <!-- Typography: Fast Preconnect & Noto Sans Devanagari with System Fallbacks -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Rozha+One&display=swap" rel="stylesheet">
+
+  <!-- Preload Critical Above-The-Fold Assets for Instant First Paint -->
+  <link rel="preload" as="image" href="assets/images/krishna-govardhan-logo.png" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/groundnut-oil.jpg" fetchpriority="high">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
@@ -53,6 +59,8 @@
               class="brand-logo-img"
               width="90" 
               height="90"
+              fetchpriority="high"
+              decoding="async"
             >
           </div>
           <div class="brand-titles">
@@ -97,7 +105,7 @@
         </div>
 
         <div class="contact-form-container">
-          <div class="contact-form-card">
+          <div class="contact-form-card" id="contact-form-card">
             <div class="form-header-box">
               <h3 class="form-main-heading">संदेश भेजें</h3>
               <p class="form-sub-heading">अपना विवरण भरें, हम आपसे तुरंत संपर्क करेंगे</p>
@@ -180,40 +188,40 @@
       <div class="container trust-container">
         <div class="trust-columns-grid">
           <!-- Column 1: Kacchi Ghani Groundnut Oil -->
-          <div class="trust-col-card" style="background-image: url('assets/images/groundnut-oil.jpg');">
+          <div class="trust-col-card" style="background-image: url('assets/images/trust-kacchi-ghani-oil.jpg');">
             <div class="trust-col-overlay"></div>
             <div class="trust-col-content">
-              <span class="trust-col-tag">🌾 कच्ची घानी</span>
+              <span class="trust-col-tag">कच्ची घानी</span>
               <h3 class="trust-col-title">कच्ची घानी मूंगफली तेल</h3>
               <p class="trust-col-desc">पारंपरिक लकड़ी की कच्ची घानी से निकाला गया 100% शुद्ध तेल। बिना किसी केमिकल, रंग या रिफाइनिंग के प्राकृतिक महक और असली स्वास्थ्यवर्धक स्वाद।</p>
             </div>
           </div>
 
           <!-- Column 2: Buffalo Desi Ghee -->
-          <div class="trust-col-card" style="background-image: url('assets/images/og-share.jpg');">
+          <div class="trust-col-card" style="background-image: url('assets/images/trust-buffalo-milking.jpg');">
             <div class="trust-col-overlay"></div>
             <div class="trust-col-content">
-              <span class="trust-col-tag">🧈 शुद्ध देसी घी</span>
+              <span class="trust-col-tag">शुद्ध देसी घी</span>
               <h3 class="trust-col-title">भैंस का शुद्ध देसी घी</h3>
               <p class="trust-col-desc">घर पर पारंपरिक मथनी से तैयार असली दानेदार देसी घी। बिना किसी मिलावट के वास्तविक पौष्टिकता, प्राकृतिक भीनी सुगंध और उत्तम स्वाद।</p>
             </div>
           </div>
 
           <!-- Column 3: Packaging & Cans -->
-          <div class="trust-col-card" style="background-image: url('assets/images/buffalo-ghee-dolchi.jpg');">
+          <div class="trust-col-card" style="background-image: url('assets/images/trust-ghee-dolchi-pour.jpg');">
             <div class="trust-col-overlay"></div>
             <div class="trust-col-content">
-              <span class="trust-col-tag">🥫 सुरक्षित पैकिंग</span>
+              <span class="trust-col-tag">सुरक्षित पैकिंग</span>
               <h3 class="trust-col-title">कैन व डोलची पैकिंग</h3>
               <p class="trust-col-desc">1L सुरक्षित सीलबंद पैक, 5L व 15L मजबूत फूड-ग्रेड कैन और टिकाऊ स्टील डोलची में स्वच्छ, सुरक्षित और लीकेज-मुक्त पैकिंग।</p>
             </div>
           </div>
 
           <!-- Column 4: Farm-Made & Delivery -->
-          <div class="trust-col-card" style="background-image: url('assets/images/farm-dairy.jpg');">
+          <div class="trust-col-card" style="background-image: url('assets/images/trust-copper-ghee-kitchen.jpg');">
             <div class="trust-col-overlay"></div>
             <div class="trust-col-content">
-              <span class="trust-col-tag">🚚 होम डिलीवरी</span>
+              <span class="trust-col-tag">होम डिलीवरी</span>
               <h3 class="trust-col-title">घर पर निर्मित शुद्धता</h3>
               <p class="trust-col-desc">सीधे हमारे घर से आपके द्वार तक। मनावर, बड़वानी और कुक्षी में सुरक्षित डिलीवरी और कैश ऑन डिलीवरी (COD) की आसान सुविधा।</p>
             </div>
@@ -235,6 +243,8 @@
               class="brand-logo-img" 
               width="90" 
               height="90"
+              loading="lazy"
+              decoding="async"
             >
           </div>
           <div class="brand-titles">
@@ -250,9 +260,9 @@
     </div>
   </footer>
 
-  <!-- Sticky Contact Button: Floating button linked to Contact Form -->
+  <!-- Sticky Contact Button: Floating button linked to Contact Form Card -->
   <aside class="sticky-contact-wrap" aria-label="त्वरित संपर्क">
-    <a href="#general-contact-form" class="sticky-contact-btn" id="sticky-contact-btn" title="हमसे संपर्क करें">
+    <a href="#contact-form-card" class="sticky-contact-btn" id="sticky-contact-btn" title="हमसे संपर्क करें">
       <span>संपर्क करें</span>
     </a>
   </aside>
@@ -402,7 +412,7 @@
     </div>
   </div>
 
-  <!-- JavaScript Application -->
-  <script src="script.js"></script>
+  <!-- JavaScript Application: Defer for unblocked rendering -->
+  <script src="script.js" defer></script>
 </body>
 </html>

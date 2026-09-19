@@ -501,6 +501,18 @@ function initStaticLinks() {
       });
     }
   });
+
+  // Sticky Contact Button: Smooth scroll directly to Contact Form Card (showing full box, not focusing first input)
+  const stickyContactBtn = document.getElementById("sticky-contact-btn");
+  if (stickyContactBtn) {
+    stickyContactBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetCard = document.getElementById("contact-form-card") || document.getElementById("contact");
+      if (targetCard) {
+        targetCard.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  }
 }
 
 
@@ -595,9 +607,11 @@ function renderProducts() {
           src="${prod.image}" 
           alt="${prod.title}" 
           class="product-card-img" 
-          loading="${index < 3 ? 'eager' : 'lazy'}"
-          width="800"
-          height="800"
+          loading="${index === 0 ? 'eager' : 'lazy'}"
+          decoding="async"
+          ${index === 0 ? 'fetchpriority="high"' : ''}
+          width="600"
+          height="600"
         >
         ${prod.isPreOrder ? `
           <div class="product-preorder-bar">⏳ आउट ऑफ स्टॉक • प्री-ऑर्डर चालू</div>
@@ -957,11 +971,26 @@ function openOrderModal(product, initialQty, initialVolume) {
     orderModal.classList.add("open");
     orderModal.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
-    
+
+    // Remove any focus from input fields to prevent virtual keyboard on mobile
+    if (document.activeElement && typeof document.activeElement.blur === "function") {
+      document.activeElement.blur();
+    }
+
+    // Ensure modal container and modal box are scrolled completely to the top
+    orderModal.scrollTop = 0;
+    const modalBox = orderModal.querySelector(".modal-box");
+    if (modalBox) {
+      modalBox.scrollTop = 0;
+    }
+
     setTimeout(() => {
-      const nameInput = document.getElementById("order-name");
-      if (nameInput) nameInput.focus();
-    }, 150);
+      if (modalBox) modalBox.scrollTop = 0;
+      orderModal.scrollTop = 0;
+      if (document.activeElement && typeof document.activeElement.blur === "function") {
+        document.activeElement.blur();
+      }
+    }, 50);
   }
 }
 
